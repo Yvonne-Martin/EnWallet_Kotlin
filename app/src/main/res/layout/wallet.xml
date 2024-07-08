@@ -19,7 +19,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/expense_trx" />
@@ -28,33 +29,32 @@
             android:id="@+id/tvSalary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Salary"
-            app:layout_constraintBottom_toBottomOf="@+id/salary"
+            android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@+id/salary"
             app:layout_constraintTop_toTopOf="@+id/salary"
-            app:layout_constraintVertical_bias="0.4"
-            tools:layout_editor_absoluteX="118dp" />
+            tools:text="Salary" />
 
         <TextView
             android:id="@+id/tvAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
-            android:text="KES 40000"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintStart_toEndOf="@+id/salary"
             app:layout_constraintTop_toBottomOf="@+id/tvSalary"
-            />
+            tools:text="KES 40000" />
 
         <TextView
             android:id="@+id/tvDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="200dp"
-            android:layout_marginTop="45dp"
-            android:text="1 JULY 2024"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="28dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/salary"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tvAmount"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="1 JULY 2024" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
