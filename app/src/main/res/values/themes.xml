@@ -5,5 +5,10 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.Myenwallet" parent="Base.Theme.Myenwallet" />
+    <style name="Theme.Myenwallet" parent="Base.Theme.Myenwallet">
+        <item name="fontFamily">@font/teacher</item>
+        <item name="android:textSize">16dp</item>
+
+    </style>
+
 </resources>
